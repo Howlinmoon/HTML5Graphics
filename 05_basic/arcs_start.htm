@@ -13,6 +13,27 @@
 				if (theCanvas && theCanvas.getContext) {
 					var ctx = theCanvas.getContext("2d");
 					if (ctx) {
+                        
+                        ctx.strokeStyle = "blue";
+                        ctx.fillStyle = "red";
+                        ctx.lineWidth = 5;
+                        
+                        // stroke a quarter arc
+                        ctx.beginPath();
+                        ctx.arc(50, 150, 100, 1.5 * Math.PI, 2 * Math.PI);
+                        ctx.stroke();
+                        
+                        // stroke a three-quarter arc, going counter-clockwise
+                        ctx.beginPath();
+                        ctx.arc(300, 150, 100, 0, 1.5 * Math.PI, false);
+                        ctx.stroke();
+                        
+                        // stroke and fill a circle
+                        ctx.beginPath();
+                        ctx.arc(550, 150, 100, 0, 2 * Math.PI, false);
+                        ctx.fill();
+                        ctx.stroke();
+                        
 					}
 				}
 			}
