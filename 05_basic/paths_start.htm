@@ -13,6 +13,36 @@
 				if (theCanvas && theCanvas.getContext) {
 					var ctx = theCanvas.getContext("2d");
 					if (ctx) {
+                        
+                        ctx.strokeStyle = "Blue";
+                        ctx.fillStyle = "Red";
+                        ctx.lineWidth = 5;
+                        
+                        // Draw an open path
+                        ctx.beginPath();
+                        ctx.moveTo(25, 175);
+                        ctx.lineTo(50, 25);
+                        ctx.lineTo(125, 50);
+                        ctx.lineTo(175, 175);
+                        ctx.stroke();
+                        
+                        // Draw closed path
+                        ctx.beginPath();
+                        ctx.moveTo(225, 175);
+                        ctx.lineTo(250, 25);
+                        ctx.lineTo(325, 50);
+                        ctx.lineTo(375, 175);
+                        ctx.closePath();
+                        ctx.stroke();
+                        
+                        // Draw a "closed" path
+                        ctx.beginPath();
+                        ctx.moveTo(425, 175);
+                        ctx.lineTo(450, 25);
+                        ctx.lineTo(525, 50);
+                        ctx.lineTo(525, 175);
+                        ctx.fill();
+                        ctx.stroke();
 					}
 				}
 			}
