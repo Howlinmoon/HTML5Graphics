@@ -2,4 +2,4 @@
 
 
 Start here next time:
-http://www.lynda.com/HTML-tutorials/Understanding-Canvas-state/80782/85051-4.html
+http://www.lynda.com/HTML-tutorials/Rendering-text/80782/85054-4.html
