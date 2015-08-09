@@ -2,4 +2,4 @@
 
 
 Start here next time:
-http://www.lynda.com/HTML-tutorials/Creating-shadows/80782/85056-4.html
+http://www.lynda.com/HTML-tutorials/Drawing-patterns/80782/85057-4.html
