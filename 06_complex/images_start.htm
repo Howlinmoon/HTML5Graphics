@@ -13,6 +13,33 @@
 				if (theCanvas && theCanvas.getContext) {
 					var ctx = theCanvas.getContext("2d");
 					if (ctx) {
+                        
+                        // draw an image directly onto the canvas at the top left
+						var srcImg = document.getElementById("img1");
+						// simple draw - full size
+                        //ctx.drawImage(srcImg, 0,0);
+                        
+                        // draw the image scaled down onto the canvas
+						// ctx.drawImage(srcImg, 50,50,350,150);
+                        
+                        //draw just a portion of the source image onto the canvas
+						ctx.drawImage(srcImg, 350,200,125,100,50,50,125,100);
+                        
+						
+                        /*
+                        // draw the video onto the canvas. We need to set an interval function
+						// in order to grab each frame from the video and paint it onto the canvas.
+						var srcVid = document.getElementById("vid1");
+						srcVid.play();
+						setInterval(function () {
+							var theCanvas = document.getElementById('Canvas1');
+							var ctx = theCanvas.getContext("2d");
+							var srcVid = document.getElementById("vid1");
+							ctx.drawImage(srcVid, 0,0);							
+						}, 16);
+                        */
+
+
 					}
 				}
 			}

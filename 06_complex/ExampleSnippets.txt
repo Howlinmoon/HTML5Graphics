@@ -29,7 +29,7 @@ Chapter 6
 
 	Images
 
-							// draw an image directly onto the canvas at the top left
+                        // draw an image directly onto the canvas at the top left
 						var srcImg = document.getElementById("img1");
 						ctx.drawImage(srcImg, 0,0);
 						
