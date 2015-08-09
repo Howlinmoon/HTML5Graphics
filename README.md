@@ -2,4 +2,4 @@
 
 
 Start here next time:
-http://www.lynda.com/HTML-tutorials/Drawing-patterns/80782/85057-4.html
+http://www.lynda.com/HTML-tutorials/Using-clipping-paths/80782/85059-4.html
